@@ -1,0 +1,26 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require vendor/bootstrap/bootstrap.min
+ *= require vendor/wrap/style
+ *= require vendor/wrap/menu/style-menu
+ *= require vendor/bootstrap/bootstrap-responsive.min
+ *= require vendor/wrap/style_responsive
+ *= require vendor/wrap/animate
+ *= require vendor/wrap/effects
+ *= require vendor/fancybox/jquery.fancybox
+ *= require vendor/elastislide/elastislide
+ *= require vendor/elastislide/custom
+ *= require vendor/flexslider/flexslider
+ *= require vendor/parallax-slider/parallax-slider
+ *= require vendor/bxslider/jquery.bxslider
+ *= require vendor/font-awesome/font-awesome
+ */
