@@ -9,18 +9,18 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require vendor/bootstrap/bootstrap.min
+ *= require bootstrap/bootstrap.min
  *= require vendor/wrap/style
  *= require vendor/wrap/menu/style-menu
- *= require vendor/bootstrap/bootstrap-responsive.min
+ *= require bootstrap/bootstrap-responsive.min
  *= require vendor/wrap/style_responsive
  *= require vendor/wrap/animate
  *= require vendor/wrap/effects
  *= require vendor/fancybox/jquery.fancybox
- *= require vendor/elastislide/elastislide
- *= require vendor/elastislide/custom
+ *= require elastislide/elastislide
+ *= require elastislide/custom
  *= require vendor/flexslider/flexslider
  *= require parallax-slider/parallax-slider
- *= require vendor/bxslider/jquery.bxslider
- *= require vendor/font-awesome/font-awesome
+ *= require bxslider/jquery.bxslider
+ *= require font-awesome/font-awesome
  */
