@@ -20,7 +20,7 @@
  *= require vendor/elastislide/elastislide
  *= require vendor/elastislide/custom
  *= require vendor/flexslider/flexslider
- *= require vendor/parallax-slider/parallax-slider
+ *= require parallax-slider/parallax-slider
  *= require vendor/bxslider/jquery.bxslider
  *= require vendor/font-awesome/font-awesome
  */
