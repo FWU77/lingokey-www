@@ -10,13 +10,15 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require vendor/wrap/jquery-1.8.2.min
-//= require vendor/wrap/modernizr.custom.17475
-//= require vendor/bootstrap/bootstrap.min
-//= require vendor/fancybox/jquery.fancybox.pack
-//= require vendor/elastislide/jquery.elastislide
-//= require vendor/flexslider/jquery.flexslider-min
-//= require vendor/parallax-slider/modernizr
-//= require vendor/parallax-slider/jquery.cslider
-//= require vendor/bxslider/jquery.bxslider
-//= require vendor/wrap/app
+//  Vendor integration
+//
+//= require wrap/jquery-1.8.2.min
+//= require wrap/modernizr.custom.17475
+//= require bootstrap/bootstrap.min
+//= require fancybox/jquery.fancybox.pack
+//= require elastislide/jquery.elastislide
+//= require flexslider/jquery.flexslider-min
+//= require parallax-slider/modernizr
+//= require parallax-slider/jquery.cslider
+//= require bxslider/jquery.bxslider
+//= require wrap/app

@@ -9,17 +9,20 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *
+ *  Vendor integration
+ *
  *= require bootstrap/bootstrap.min
- *= require vendor/wrap/style
- *= require vendor/wrap/menu/style-menu
+ *= require wrap/style
+ *= require wrap/style-menu
  *= require bootstrap/bootstrap-responsive.min
- *= require vendor/wrap/style_responsive
- *= require vendor/wrap/animate
- *= require vendor/wrap/effects
- *= require vendor/fancybox/jquery.fancybox
+ *= require wrap/style_responsive
+ *= require wrap/animate
+ *= require wrap/effects
+ *= require fancybox/jquery.fancybox
  *= require elastislide/elastislide
  *= require elastislide/custom
- *= require vendor/flexslider/flexslider
+ *= require flexslider/flexslider
  *= require parallax-slider/parallax-slider
  *= require bxslider/jquery.bxslider
  *= require font-awesome/font-awesome

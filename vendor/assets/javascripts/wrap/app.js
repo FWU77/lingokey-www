@@ -1,59 +1,59 @@
 var App = function () {
 
     function handleSliders() {
-		/*
-        $(function () {
-            $('#ei-slider').eislideshow({
-                animation			: 'center',
-					autoplay			: true,
-					slideshow_interval	: 3000,
-					titlesFactor		: 0
-            });
+        /*
+         $(function () {
+         $('#ei-slider').eislideshow({
+         animation			: 'center',
+         autoplay			: true,
+         slideshow_interval	: 3000,
+         titlesFactor		: 0
+         });
+         });
+         */
+
+        $('#elastislide').elastislide({
+            minItems: 2
         });
-		*/
 
-        $( '#elastislide' ).elastislide( {
-				minItems : 2
-			} );
+        $('#clients-flexslider').flexslider({
+            animation: "slide",
+            easing: "swing",
+            animationLoop: true,
+            itemWidth: 1,
+            itemMargin: 1,
+            minItems: 2,
+            maxItems: 9,
+            controlNav: false,
+            directionNav: false,
+            move: 2
+        });
 
-		$('#clients-flexslider').flexslider({
-			animation: "slide",
-			easing: "swing",
-			animationLoop: true,
-			itemWidth: 1,
-			itemMargin: 1,
-			minItems: 2,
-			maxItems: 9,
-			controlNav: false,
-			directionNav: false,
-			move: 2
-		});
-		
-		$('#photo-flexslider').flexslider({
-			animation: "slide",
-			controlNav: false,
-			animationLoop: false,
-			itemWidth: 80,
-			itemMargin: 0
-		});	
-		
-		$('#testimonal_carousel').collapse({
-			toggle: false
-		});
+        $('#photo-flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            itemWidth: 80,
+            itemMargin: 0
+        });
+
+        $('#testimonal_carousel').collapse({
+            toggle: false
+        });
     }
 
     function handleFancybox() {
-		jQuery(".fancybox-button").fancybox({
-		groupAttr: 'data-rel',
-		prevEffect: 'none',
-		nextEffect: 'none',
-		closeBtn: true,
-		helpers: {
-			title: {
-				type: 'inside'
-				}
-			}
-		});
+        jQuery(".fancybox-button").fancybox({
+            groupAttr: 'data-rel',
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: true,
+            helpers: {
+                title: {
+                    type: 'inside'
+                }
+            }
+        });
     }
 
     function handleIEFixes() {
@@ -97,18 +97,18 @@ var App = function () {
     }
 
     function handleSearch() {
-	
+
         jQuery('.search').click(function () {
-			if(jQuery('.search-btn').hasClass('icon-search')){
-				jQuery('.search-open').fadeIn(500);
-				jQuery('.search-btn').removeClass('icon-search');
-				jQuery('.search-btn').addClass('icon-remove');
-			} else {
-				jQuery('.search-open').fadeOut(500);
-				jQuery('.search-btn').addClass('icon-search');
-				jQuery('.search-btn').removeClass('icon-remove');
-			}	
-        }); 
+            if (jQuery('.search-btn').hasClass('icon-search')) {
+                jQuery('.search-open').fadeIn(500);
+                jQuery('.search-btn').removeClass('icon-search');
+                jQuery('.search-btn').addClass('icon-remove');
+            } else {
+                jQuery('.search-open').fadeOut(500);
+                jQuery('.search-btn').addClass('icon-search');
+                jQuery('.search-btn').removeClass('icon-remove');
+            }
+        });
     }
 
     return {
