@@ -8,20 +8,11 @@
     </a><!-- /nav-collapse -->
     <div class="nav-collapse collapse">
       <ul class="nav top-2">
-        <li><a href="">Home</a></li>
-        <li><a href="">Partner</a></li>
-        <li><a href="index.html#">Blog</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a class="search"><i class="icon-search search-btn"></i></a></li>
+        <li><%= link_to('Home', root_path) %></li>
+        <li><%= link_to('Contact Us', contact_path) %></li>
       </ul>
-      <div class="search-open">
-        <div class="input-append">
-          <form>
-            <input type="text" id="appendedInputButton" class="span3 border-radius-none" placeholder="Search" />
-            <button type="submit" class="btn-u">Go</button>
-          </form>
-        </div>
-      </div>
-    </div><!-- /nav-collapse -->
-  </div><!-- /navbar-inner -->
+    </div>
+    <!-- /nav-collapse -->
+  </div>
+  <!-- /navbar-inner -->
 </div><!-- /navbar -->
