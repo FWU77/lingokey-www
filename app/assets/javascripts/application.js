@@ -22,3 +22,4 @@
 //= require parallax-slider/jquery.cslider
 //= require bxslider/jquery.bxslider
 //= require wrap/app
+//= require lightbox/bootstrap-lightbox
