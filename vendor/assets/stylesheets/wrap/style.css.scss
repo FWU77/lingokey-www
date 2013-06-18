@@ -620,8 +620,7 @@ blockquote:hover {
 /*Welcome Block*/
 .servive-block .span4 {
   padding: 20px 30px;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   background: #fafafa;
   border-radius: 2px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -648,6 +647,7 @@ blockquote:hover {
 .servive-block .span4 i {
   color: #565656;
   font-size: 40px;
+  text-align: center;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
