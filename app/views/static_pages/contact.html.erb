@@ -1,3 +1,59 @@
 <% provide(:title, 'Contact Us') %>
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<!-- Purchase Block -->
+<div class="row-fluid purchase margin-bottom-30">
+  <div class="container">
+    <div class="span6">
+      <div class="headline"><h3>Send us a message</h3></div>
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label" for="name">Name</label>
+
+          <div class="controls">
+            <input type="text" id="name" placeholder="Name">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="company">Company</label>
+
+          <div class="controls">
+            <input type="text" id="company" placeholder="Company">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="email">Email</label>
+
+          <div class="controls">
+            <input type="text" id="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="phone">Telephone</label>
+
+          <div class="controls">
+            <input type="text" id="phone" placeholder="Telephone">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="span6">
+      <div class="headline"><h3>Email or call us</h3></div>
+      <address>
+        25, LingoKey street<br>
+        LingoPlace <br>
+        Phone: 0800 123 3456 <br>
+        Fax: 0800 123 3456 <br>
+        Email: <a href="mailto:info@lingokey.com" class="">info@lingokey.com</a>
+      </address>
+      <div class="headline"><h3>Social networks</h3></div>
+      <ul class="social-icons">
+        <li><a href="index.html#" data-original-title="Facebook" class="facebook"></a></li>
+        <li><a href="index.html#" data-original-title="Twitter" class="twitter"></a></li>
+      </ul>
+    </div>
+  </div>
+</div><!--/row-fluid-->
