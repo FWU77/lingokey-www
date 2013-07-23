@@ -67,5 +67,19 @@ module LingokeyDynamic
 
     # Add font vendor path
     config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
+    
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "lingo-key.com",
+      :user_name            => "no-reply@lingo-key.com",
+      :password             => "L1ng0K3y0utB0und",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "yourdomain.dev"
+    }
   end
 end

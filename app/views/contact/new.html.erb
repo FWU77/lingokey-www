@@ -4,7 +4,7 @@
   <div class="container">
     <div class="span6">
       <div class="headline"><h3>Send us a message</h3></div>
-      <%= form_for @message, :url => contact_path do |form| %>
+      <%= form_for @message, :url => contact_path, html: {class: "form-horizontal"} do |form| %>
         <div class="control-group">
           <label class="control-label" for="name">Name</label>
 
@@ -46,7 +46,7 @@
           </div>
         </div>
 
-      </form>
+      <% end %>
     </div>
     <div class="span6">
       <div class="headline"><h3>Email or call us</h3></div>
