@@ -163,6 +163,14 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 .service .desc h4 {
   font-size: 22px;
   line-height: 25px;
+  color: #585f69;
+  border-bottom: 2px solid #1d70b7;
+  padding-bottom:10px;
+}
+.service .desc h5 {
+  color: #585f69;
+  border-bottom: 2px solid #1d70b7;
+  padding-bottom:5px;
 }
 
 .ie7 .service .circle i {
@@ -1761,4 +1769,17 @@ a.btn-u-large {
 
 .youtube {
   background: image-url("wrap/icons/social/youtube.png") no-repeat;
+}
+
+.modal h4 {
+  font-size: 22px;
+  line-height: 25px;
+  color: #585f69;
+  border-bottom: 2px solid #1d70b7;
+  padding-bottom:10px;
+}
+.modal h5 {
+  color: #585f69;
+  border-bottom: 2px solid #1d70b7;
+  padding-bottom:5px;
 }
