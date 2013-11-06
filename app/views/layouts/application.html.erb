@@ -35,9 +35,9 @@
   <% if (Rails.env.production? || Rails.env.test? || Rails.env.development?) %>
     <script>
       $(document).ready(function(){
-        alert($("a").length);
         $("a").click(function(){
-          ga('send', 'event', 'button', 'click', $("this").attr('href'), 0);
+          alert($("this").attr('href'));
+          ga('send', 'event', 'button', 'click', $("this").attr('href'), 1);
         });
       });
     </script>
