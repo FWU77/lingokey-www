@@ -36,8 +36,8 @@
     <script>
       $(document).ready(function(){
         $("a").click(function(){
-          alert($("this").attr('href'));
-          ga('send', 'event', 'button', 'click', $("this").attr('href'), 1);
+          alert($(this).attr('href'));
+          ga('send', 'event', 'button', 'click', $(this).attr('href'), 1);
         });
       });
     </script>
