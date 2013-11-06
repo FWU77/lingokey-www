@@ -37,6 +37,10 @@
       $(document).ready(function(){
         $("a").click(function(){
           alert($(this).attr('href'));
+          ga('send', 'event', 'link', 'click', $(this).attr('href'), 1);
+        });
+        $("button").click(function(){
+          alert($(this).attr('href'));
           ga('send', 'event', 'button', 'click', $(this).attr('href'), 1);
         });
       });
