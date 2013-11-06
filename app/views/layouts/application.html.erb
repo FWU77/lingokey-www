@@ -32,15 +32,13 @@
   
   <!-- script block for hooking up GA onclick events -->
   
-  <% if (Rails.env.production? || Rails.env.test? || Rails.env.development?) %>
+  <% if (Rails.env.production? || Rails.env.test?) %>
     <script>
       $(document).ready(function(){
-        $("a").click(function(){
-          alert($(this).attr('href'));
+        $("a[href]").click(function(){
           ga('send', 'event', 'link', 'click', $(this).attr('href'), 1);
         });
-        $("button").click(function(){
-          alert($(this).attr('href'));
+        $("button[href]").click(function(){
           ga('send', 'event', 'button', 'click', $(this).attr('href'), 1);
         });
       });
