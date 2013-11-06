@@ -25,10 +25,19 @@
 
       ga('create', 'UA-45110502-1', 'lingo-key.com');
       ga('send', 'pageview');
-
     </script>
   <% elsif Rails.env.development? %>
     <script></script>
+  <% end %>
+  
+  <!-- script block for hooking up GA onclick events -->
+  
+  <% if (Rails.env.production? || Rails.env.test? || Rails.env.development?) %>
+    <script>
+      $('a').click(function(){
+        ga('send', 'event', 'button', 'click', $(this.attr('href'), 0);
+      });
+    </script>
   <% end %>
 </head>
 <body>
