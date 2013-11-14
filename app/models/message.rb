@@ -6,7 +6,7 @@ class Message
 
   attr_accessor :name, :email, :telephone, :subject, :callback, :body
 
-  validates :name, :email, :telephone, :subject, :body, :presence => true
+  validates :name, :email, :telephone, :subject, :callback, :body, :presence => true
   validates :email, :format => { :with => %r{.+@.+\..+} }, :allow_blank => true
   
   def initialize(attributes = {})
