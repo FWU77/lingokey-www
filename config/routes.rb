@@ -3,6 +3,8 @@ LingokeyDynamic::Application.routes.draw do
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  
+  match 'englishtoarabictranslation' => "static_pages#englishtoarabictranslation"
 
 
   # The priority is based upon order of creation:
