@@ -37,7 +37,7 @@
           <label class="control-label" for="callback">Would you like us to call you back?</label>
 
           <div class="controls">
-            <%= form.check_box :callback %>
+            <%= form.check_box :callback, {:class => "message"}, "Yes please", "No thanks" %>
           </div>
         </div>
         <div class="control-group">
