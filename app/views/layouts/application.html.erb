@@ -50,6 +50,7 @@
     <%= render('layouts/top') %>
     <!--=== Content part ===-->
     <div id="body">
+        <%= render 'layouts/flash_messages' %>
         <%= yield %>
     </div>
     <%= render('layouts/bottom') %>
