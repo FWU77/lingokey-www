@@ -156,8 +156,15 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 }
 
 .service .desc {
-  width: 75%;
   float: right;
+}
+
+.service .width_75 {
+  width: 75%;
+}
+
+.service .width_100 {
+  width: 100%;
 }
 
 .service .desc h4 {
