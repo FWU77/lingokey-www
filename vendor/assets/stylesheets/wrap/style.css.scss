@@ -23,9 +23,15 @@ body {
   background: #fff;
 }
 
-p, a, li {
+p, li {
   color: #555;
   line-height: 1.6;
+}
+
+a {
+ color: #1E99F7;
+ line-height: 1.6;
+ text-decoration: underline;
 }
 
 a,
@@ -33,7 +39,6 @@ a:focus,
 a:hover,
 a:active {
   outline: 0 !important;
-  text-decoration: none;
 }
 
 a:hover {
@@ -46,7 +51,7 @@ h1, h2, h3, h4, h5 {
   text-shadow: none;
   text-shadow: 0 0 1px #f6f6f6;
   font-weight: normal !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', 'Open Sans', sans-serif;
 }
 
 h1 i, h2 i, h3 i, h4 i, h5 i {
@@ -200,7 +205,7 @@ blockquote:hover {
   font-size: 16px;
   background: #fcfcfc;
   border-left: 4px solid #ED5F1D;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', 'Open Sans', sans-serif;
 }
 
 .hero h1, .hero p {
@@ -602,6 +607,7 @@ blockquote:hover {
   position: absolute;
   background: #1d70b7;
   display: inline-block;
+  text-decoration: none;
 }
 
 .thumbnail-style a.btn-more:hover {
@@ -611,6 +617,7 @@ blockquote:hover {
 
 .thumbnail-style:hover a.btn-more {
   right: 10px;
+  text-decoration: none;
 }
 
 .thumbnail-kenburn img {
