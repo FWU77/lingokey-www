@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+  <%= render 'layouts/monologue/application/head' %>
+  
+  <style>
+    .content header { 
+      border-bottom: none;
+      border-top: none;
+    }
+    .content header h1 {
+      margin:0 0 0 10px
+    }
+    
+    header.post-header h1 { 
+      font-family: Arial, sans-serif;
+      font-size: 28px;
+      text-align: left;
+    }
+    
+    header.post-header h1 a {
+      font-size: inherit;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: #1D70B7;
+    }
+    
+    header.post-header h1 a:hover {
+      color: #F77C1E;
+      font-weight: bold;
+    }
+    
+    .content header .posted {
+      border-top: #1d70b7 2px solid;
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-weight:bold;
+      margin-bottom:10px
+      text-align:center;
+    }
+
+    .content a {
+      font-size: 14px;
+      color: #1D70B7;
+      text-transform: none;
+    }
+    
+    .content a:hover {
+      color: #F77C1E;
+    }
+    
+    a {
+      color: #006dcc;
+      text-transform: capitalize;
+    }
+    
+    p { 
+      font-size: 14px;
+    }
+    
+    a.button {
+      background: #00B2EE;
+      background-image: -webkit-linear-gradient(top, #00B2EE, #0099CC);
+      background-image: -moz-linear-gradient(top, #00B2EE, #0099CC);
+      background-image: -ms-linear-gradient(top, #00B2EE, #0099CC);
+      background-image: -o-linear-gradient(top, #00B2EE, #0099CC);
+      background-image: linear-gradient(to bottom, #00B2EE, #0099CC);
+      color: #fff;
+      font-size: 11px;
+      padding: 10px 20px 10px 20px;
+      border: solid #0099CC 1px;
+      text-shadow: none;
+    }
+
+    a.button:hover {
+      background: #0099CC;
+      background-image: -webkit-linear-gradient(top, #0099CC, #009ACD);
+      background-image: -moz-linear-gradient(top, #0099CC, #009ACD);
+      background-image: -ms-linear-gradient(top, #0099CC, #009ACD);
+      background-image: -o-linear-gradient(top, #0099CC, #009ACD);
+      background-image: linear-gradient(to bottom, #0099CC, #009ACD);
+      text-decoration: none;
+      color: #fff;
+      border: solid #1b53fa 1px;
+    }
+    
+     section { 
+      display: block;
+      border-radius: 2px;
+      // border: 2px solid #1d70b7;
+      box-shadow:0 0 14px #ddd;
+      background:#fcfcfc;
+      margin-bottom: 30px;
+      padding: 10px;
+    }
+    
+    section.widget header {
+      background: #0099CC;
+      background-image: -webkit-linear-gradient(top, #0099CC, #009ACD);
+      background-image: -moz-linear-gradient(top, #0099CC, #009ACD);
+      background-image: -ms-linear-gradient(top, #0099CC, #009ACD);
+      background-image: -o-linear-gradient(top, #0099CC, #009ACD);
+      background-image: linear-gradient(to bottom, #0099CC, #009ACD);
+      text-decoration: none;
+      color: #fff;
+      border: solid #1b53fa 1px;
+    }
+    
+    section.widget header h1 {
+      color: #fff;
+      text-shadow: none;
+    }
+    
+    section.widget a {
+      font-size: 13px;
+      text-decoration: none;
+      color: #1D70B7;
+    }
+    
+    .widget a:hover {
+      color: #F77C1E;
+    }
+    
+    .tag {
+      border: solid #0099CC 1px;
+    }
+    
+    .tag a {
+      font-size: 11px;
+      text-shadow: none;
+      text-decoration: none;
+    }
+    
+    .content article footer .social-tagline {
+      font-family: Arial, sans-serif;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  <%= render('layouts/top') %>
+  
+  <div id="body" class="container">
+    <header class="main-header sixteen columns clearfix">
+      <%= rss_icon %>
+      <h1><a href="<%= root_path %>"><%=Monologue.site_name%></a></h1>
+      <h2><%=Monologue.site_subtitle%></h2>
+      <%= render partial: "layouts/monologue/application/social_icons" %>
+    </header>
+
+    <div class="content twelve columns">
+      <% flash.each do |name, msg| %>
+        <div class="flash-notice">
+          <%= msg %>
+        </div>
+      <% end %>
+
+      <%= yield %>
+    </div>
+
+      <%= render 'layouts/monologue/application/sidebar' %>
+  </div>
+  <% if content_for?(:footer) %>
+    <footer>
+      <%= yield :footer %>
+    </footer>
+  <% end %>
+  <%= render 'layouts/monologue/application/disqus' %>
+  <%= render 'layouts/monologue/application/gauge_analytics' %>
+  
+  <%= render('layouts/bottom') %>
+  <%= render('layouts/copyright') %>
+</body>
+</html>
