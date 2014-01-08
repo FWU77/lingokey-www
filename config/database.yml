@@ -7,7 +7,7 @@ development:
   # adapter: sqlite3
   adapter: postgresql
   database: lingokey_dev
-  username: postgres
+  username: lingokey
   password: L0ck0nD0ck0n
   pool: 5
   timeout: 5000
@@ -19,7 +19,7 @@ test:
   # adapter: sqlite3
   adapter: postgresql
   database: lingokey_test
-  username: postgres
+  username: lingokey
   password: L0ck0nD0ck0n
   pool: 5
   timeout: 5000
