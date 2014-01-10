@@ -20,3 +20,11 @@ Monologue.meta_description     = "The Blog of LingoKey.  Europe's leading Middle
 Monologue.admin_force_ssl       = true # that can be set to false if you don't have SSL, but it is not recommended
 #Monologue.posts_per_page      = 5 # OPTIONAL: number of posts per page on main page. It defaults to 10 currently
 #Monologue.google_analytics_id  = "GA-CODE-HERE" # OPTIONAL: Your Google Analytics code should be here if you have one.
+
+if Rails.env.production?
+  Monologue.google_analytics_id  = "UA-45110502-2"    
+elsif Rails.env.test?
+  Monologue.google_analytics_id  = "UA-45110502-1"
+elsif Rails.env.development?
+  Monologue.google_analytics_id  = "UA-45110502-1"
+end
