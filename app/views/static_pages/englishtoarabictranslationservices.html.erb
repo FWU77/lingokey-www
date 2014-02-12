@@ -1,0 +1,111 @@
+<% provide(:title, 'English to Arabic Translation') %>
+<!-- %= render('static_pages/slider/slider') % -->
+<!-- Purchase Block -->
+<div class="row-fluid purchase margin-bottom-30">
+  <div class="container">
+    <div class="span9">
+      	<h2>Professional Arabic Translation Services</h2>
+      
+      	<p>If you are looking for high quality Arabic translations, you have come to the right place. We are the UK's leading Arabic translation specialists, and we offer the translation expertise to make sure your Arabic translations meet the high standards you require.</p>
+
+      	<p>We are so confident you will like our quality, we <a href="#peaceOfMind" data-toggle="modal">guarantee</a> it!</p>
+	<%= render('static_pages/home/modals/peace_of_mind') %>
+
+      	<h3>High Quality Translations</h3>
+
+      	<p>We work with only the best Arabic translators, carefully selected for you. Whether marketing, legal, technical or financial translations, you can be sure that our chosen translator will be an expert in your field.</p>
+      	<p>You will also be assigned a project manager, who will act as an extension of your business - to make sure that your requirements are met, your project runs smoothly and that your project is delivered to your deadline.</p>
+
+      	<h3>Strict Confidentiality</h3>
+
+      	<p>We know that data confidentiality is important to you. That is why we offer you complete confidentiality.</p>
+	<p>We employ secure software systems, our in-house staff have been security cleared, and our in market translation suppliers adhere to strict, signed confidentiality agreements.</p>
+	<p>Your data is safe with us.</p>
+
+	<h3>Complete Localisation Services</h3>
+ 
+	<p>There is more to localisation than just translation, especially when it comes to Arabic.  Arabic is written right to left, and as a result your documentation will need to be reformatted post-translation.</p>
+ 	<p>Likewise your website will need to display right-to-left, and you will need to check the support your software packages offer for Arabic characters.</p>
+
+	<p>We have solutions to all of these challenges. Localising into Arabic is what we do! Click here to find out more about our <a href="#howCanWeHelp" data-toggle="modal">localisation services</a>.</p>
+      	<%= render('static_pages/home/modals/how_can_we_help') %>
+
+	<h3>Free Advice</h3>
+
+	<p>Are you planning a localisation project into Arabic? Are you concerned about the challenges facing you? Do you want to speak to someone who can help?</p>
+	<p>Get in touch and claim your free 15 minute consultation. We look forward to speaking to you.</p>
+
+	<h3>No Obligation Quote</h3>
+
+	<p>We are happy to prepare a no obligation quote for you. No hidden extras, no surprise charges.</p>
+	<p>We will contact you to find out a little more about your requirements, and will provide your free, no obligation quote within 24 hours.</p>
+
+	<h3>Do You Need More Time?</h3>
+
+	<p>We understand that you might not be ready to start today. But we do hope we can work together in the future.</p>
+	<p>Do stay in touch - bookmark our page and return when ready, or move on to our blog to see what we have to say about all things related to Middle Eastern localisation.</p>
+	<p>And thank you for visiting our site. We hope to speak to you soon.</p>
+
+      	<%= link_to 'Get a quote now', contact_path, :class => 'btn-buy hover-effect' %>
+      
+    </div>
+  </div>
+</div><!--/row-fluid-->
+<!--//End Purchase Block -->
+
+<div class="container">
+  <div id="clients-flexslider" class="flexslider home clients">
+    <div class="headline"><h3>Our Clients</h3></div>	
+    <ul class="slides">
+      <li><a href="index.html#"><%= image_tag('clients/nikon_grey.png')%> <%= image_tag('clients/nikon.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/xerox_grey.png')%> <%= image_tag('clients/xerox.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/whirlpool_grey.png')%> <%= image_tag('clients/whirlpool.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/ge_grey.png')%> <%= image_tag('clients/ge.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/fd_grey.png')%> <%= image_tag('clients/fd.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/onecom_grey.png')%> <%= image_tag('clients/onecom.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/california_grey.png')%> <%= image_tag('clients/california.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/CAT_grey.png')%> <%= image_tag('clients/CAT.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/NHS_grey.png')%> <%= image_tag('clients/NHS.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/minetech_grey.png')%> <%= image_tag('clients/minetech.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/isuzu_grey.png')%> <%= image_tag('clients/isuzu.png', class:"color-img")%></a></li>
+      <li><a href="index.html#"><%= image_tag('clients/AFS_grey.png')%> <%= image_tag('clients/AFS.png', class:"color-img")%></a></li>        
+    </ul>
+  </div>
+  <%= render('static_pages/slider/slider_js') %> 
+  
+  <br />
+  
+  <div class="headline"><h3>Pricing</h3></div>
+  <div class="row-fluid pricing-table pricing-two-column">
+    <div class="span4 plan">
+      <div>
+        <h2><i class="icon-globe"></i> Translation</h2>
+      </div>
+      <ul>
+        <li class="plan-feature"><h4><small>Starting from</small> £0.08 <small>per word</small></h4></li>
+        <li class="plan-feature">The very best Middle Eastern translators working for you.</li>
+        <li class="plan-feature"><%= link_to 'Get a quote', contact_path, :class => 'btn btn-primary btn-plan-select' %></li>
+      </ul>
+    </div>
+    <div class="span4 plan">
+      <div>
+        <h2><i class="icon-text-width"></i> Typesetting</h2>
+        </div>
+      <ul>
+        <li class="plan-feature"><h4><small>Starting from as little as</small> £3 <small>per page</small></h4></li>
+        <li class="plan-feature">Giving your documentation that polished look, ready for your target market.</li>
+        <li class="plan-feature"><%= link_to 'Get a quote', contact_path, :class => 'btn btn-primary btn-plan-select' %></li>
+      </ul>
+    </div>
+    <div class="span4 plan">
+      <div>
+        <h2><i class="icon-tablet"></i> Publishing</h2>
+      </div>
+      <ul>
+        <li class="plan-feature"><h4><small>Starting from </small>£99</h4></li>
+        <li class="plan-feature">Helping you prepare your publishing systems for Middle Eastern content</li>
+        <li class="plan-feature"><%= link_to 'Get a quote', contact_path, :class => 'btn btn-primary btn-plan-select' %></li>
+      </ul>
+    </div>
+  </div>
+  
