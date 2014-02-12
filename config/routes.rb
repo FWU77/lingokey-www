@@ -1,12 +1,14 @@
 LingokeyDynamic::Application.routes.draw do
   root :to => "static_pages#home"
-
+  
+  # Routes for Contact Us form
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  match 'thankyou' => "static_pages#contact_thanks"  
   
   match 'englishtoarabictranslation' => "static_pages#englishtoarabictranslation"
   match 'englishtoarabictranslationservices' => "static_pages#englishtoarabictranslationservices"
-
+  
   # This line mounts Monologue's routes at the root of your application.
   # This means, any requests to URLs such as /my-post, will go to Monologue::PostsController.  
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
