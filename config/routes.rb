@@ -5,6 +5,7 @@ LingokeyDynamic::Application.routes.draw do
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
   match 'thankyou' => "static_pages#contact_thanks"  
+  match 'attribution' => "static_pages#attribution"
   
   match 'englishtoarabictranslation' => "static_pages#englishtoarabictranslation"
   match 'englishtoarabictranslationservices' => "static_pages#englishtoarabictranslationservices"
