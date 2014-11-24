@@ -5,12 +5,13 @@ LingoKey Dynamic is the base system for the future foundation of the LingoKey we
 == Author
 
 James Keane <mail@james-keane.co.uk>
+Malcolm Johnston <malcolmpjohnston@gmail.com>
 
 == Copyright
 
 2013, LingoKey Ltd
 
-Certain parts of this system are Copyright James Keane, however granted under perpetual license for the lifetime of this softwate.
+Certain parts of this system are Copyright James Keane, however granted under perpetual license for the lifetime of this software.
 
 == Information
 
